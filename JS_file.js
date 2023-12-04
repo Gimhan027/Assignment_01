@@ -23,18 +23,34 @@ function Font_color_Feature()
 }
 
 
-    function AlignLeft_Feature() {
+    function AlignLeft_Feature() 
+    {
         document.execCommand('justifyLeft', false, null);
       }
     
-      function Center_Feature() {
+      function Center_Feature()
+       {
         document.execCommand('justifyCenter', false, null);
       }
     
-      function AlignRight_Feature() {
+      function AlignRight_Feature() 
+      {
         document.execCommand('justifyRight', false, null);
       }
     
-      function Justify_Feature() {
+      function Justify_Feature() 
+      {
         document.execCommand('justifyFull', false, null);
       }
+
+      function Undo_Feature() {
+        document.execCommand('undo', false, null);
+      }
+    
+      function Redo_Feature() {
+        document.execCommand('redo', false, null);
+      }
+    
+
+
+
