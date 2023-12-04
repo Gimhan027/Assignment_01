@@ -13,9 +13,28 @@ function Italic_Feature()
     document.execCommand('italic', true, null)
 }
 
-function Font_color_Feature() {
+function Font_color_Feature() 
+{
     var fontColor = document.querySelector('input[type="color"]').value;
     if (fontColor) {
         document.execCommand('styleWithCSS', false, true);
         document.execCommand('foreColor', false, fontColor);
     }
+}
+
+
+    function AlignLeft_Feature() {
+        document.execCommand('justifyLeft', false, null);
+      }
+    
+      function Center_Feature() {
+        document.execCommand('justifyCenter', false, null);
+      }
+    
+      function AlignRight_Feature() {
+        document.execCommand('justifyRight', false, null);
+      }
+    
+      function Justify_Feature() {
+        document.execCommand('justifyFull', false, null);
+      }
