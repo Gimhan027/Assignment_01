@@ -43,11 +43,13 @@ function Font_color_Feature()
         document.execCommand('justifyFull', false, null);
       }
 
-      function Undo_Feature() {
+      function Undo_Feature() 
+      {
         document.execCommand('undo', false, null);
       }
     
-      function Redo_Feature() {
+      function Redo_Feature() 
+      {
         document.execCommand('redo', false, null);
       }
     
